@@ -11,7 +11,7 @@ region = '<your-aws-region>'
 service = 'bedrock-agentcore'
 
 # Prepare request
-url = "https://bedrock-agentcore.us-east-1.amazonaws.com/runtimes/<your-agentcore-runtime-arn>/invocations?qualifier=inpublic" # note this must be the encoded arn version see encoded_test.py to use ARN to construct URL more easily.
+url = "https://bedrock-agentcore.us-east-1.amazonaws.com/runtimes/<your-ENCODED-agentcore-runtime-arn>/invocations?qualifier=inpublic" # note this must be the encoded arn version see encoded_test.py to use ARN to construct URL more easily.
 body = '{"prompt": "why sky is blue"}'
 
 headers = {
